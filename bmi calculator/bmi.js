@@ -11,14 +11,28 @@
         if (form.checkValidity() === false) {
           event.preventDefault();
           event.stopPropagation();
-
-          //validate numeric input
-
         }
+
         form.classList.add('was-validated');
       }, false);
     });
+
   }, false);
 
 })();
 
+//calculate bmi
+function calculateBmi()
+{
+  //retrieves the value of id called pounds and stores it in variable 'pounds'
+  var pounds = document.getElementById('pounds').value;
+
+  //retrieves the value of id called inches and stores it in variable 'inches'
+  var inches = document.getElementById('inches').value;
+
+  //retrieves the value of id called feet and stores it in variable 'feet'
+  var feet = document.getElementById('feet').value;
+
+  //convert to integers for computation
+  
+}

@@ -23,7 +23,7 @@
 	<!-- NavBar -->
 	<nav class="navbar navbar-dark bg-dark">
   		<span class="navbar-text">
-    		Welcome to the BMI Calculator!
+    		<h3>Welcome to the BMI Calculator!</h3>
   		</span>
 	</nav>
 
@@ -34,8 +34,8 @@
 		<div class="form-row">
     		<div class="col-md-1 mb-1">
 
-      			<label for="validationCustom03">Feet</label>
-      			<input type="text" class="form-control" id="validationCustom03" required>
+      			<label for="feet">Feet</label>
+      			<input type="number" min="1" class="form-control" id="feet" required>
 
       			<div class="invalid-feedback">
         			Please provide number of feet.
@@ -47,8 +47,8 @@
 		<div class="form-row">
     		<div class="col-md-1 mb-1">
 
-      			<label for="validationCustom05">Inches</label>
-      			<input type="text" class="form-control" id="validationCustom05" required>
+      			<label for="inches">Inches</label>
+      			<input type="number" min="0" class="form-control" id="inches" required>
 
       			<div class="invalid-feedback">
         			Please provide number of inches.
@@ -59,8 +59,8 @@
 		<!-- Row 3 of form requesting weight in Pounds -->
 		<div class="form-row">
     		<div class="col-md-1 mb-1">
-				<label for="validationCustom06">Weight</label>
-      			<input type="text" class="form-control" id="validationCustom06" required>
+				<label for="pounds">Weight</label>
+      			<input type="number" min="0" class="form-control" id="pounds" required>
 
       			<div class="invalid-feedback">
         			Please provide weight.
@@ -71,7 +71,7 @@
 		<br>
 
 		<!-- Submit Button -->
- 		<button class="btn btn-primary" type="submit">Submit form</button>
+ 		<button class="btn btn-primary" onclick="calculateBmi()" type="submit">Calculate</button>
 	</form>
 
 	<!-- Bootstrap Stuff -->

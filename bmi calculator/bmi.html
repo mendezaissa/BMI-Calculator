@@ -28,7 +28,7 @@
 	</nav>
 
 	<!-- Main Form where user inputs required information in order to calculate BMI -->
-	<form class="needs-validation" novalidate>
+	<form class="needs-validation" action="#" onsubmit="calculateBmi();return false" novalidate>
 
 		<!-- Row 1 of form requesting # of Feet -->
 		<div class="form-row">
@@ -71,7 +71,7 @@
 		<br>
 
 		<!-- Submit Button -->
- 		<button class="btn btn-primary" onclick="calculateBmi()" type="submit">Calculate</button>
+ 		<button class="btn btn-primary" type="submit">Calculate</button>
 	</form>
 
 	<!-- Bootstrap Stuff -->

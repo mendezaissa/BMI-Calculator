@@ -1,3 +1,4 @@
+
 (function() {
   'use strict';
   window.addEventListener('load', function() {
@@ -19,7 +20,9 @@
 
   }, false);
 
-})();
+} )();
+
+
 
 var result = "";
 
@@ -66,11 +69,26 @@ function calculateBmi()
   else if(bmi >= 30.0)
   {
     result = "Obese";
+    displayResults();
   }
   else
   {
     result = "Please check the accuracy of the information you entered. Try again."
   }
-
-  alert(result);
 }
+
+function displayResults()
+{
+  console.log("displayResults");
+
+  /*getsElementsByClassName returns an element collection, here we need to get the first
+    element of the collection in order to be able to read & set property 'display' */
+  var currentDisplay = document.getElementsByClassName('needs-validation');
+  var newDisplay = currentDisplay[0].style.display = 'none';
+
+  //test
+  var btn = document.createElement("BUTTON");   // Create a <button> element
+  btn.innerHTML = "CLICK ME";                   // Insert text
+  document.body.appendChild(btn);               // Append <button> to <body>
+}
+

@@ -22,9 +22,11 @@
 
 } )();
 
-
-
+//variable that stores the bmi category
 var result = "";
+
+//variable that stores the bmi number
+var bmi = 0;
 
 //calculate bmi function
 function calculateBmi()
@@ -47,7 +49,7 @@ function calculateBmi()
   var height = (ft * 12) + inches;
 
   //calculates bmi
-  var bmi = (weight / ( height*height )) * 703;
+  bmi = (weight / ( height*height )) * 703;
 
   //truncates bmi down to one decimal point
   bmi = parseFloat(bmi.toFixed(1));
@@ -57,23 +59,22 @@ function calculateBmi()
   if(bmi < 18.5)
   {
     result = "Underweight";
+    displayResults();
   }
   else if(bmi >= 18.5 && bmi <= 24.9)
   {
     result = "Normal";
+    displayResults();
   }
   else if(bmi >= 25.0 && bmi <= 29.9)
   {
     result = "Overweight";
+    displayResults();
   }
   else if(bmi >= 30.0)
   {
     result = "Obese";
     displayResults();
-  }
-  else
-  {
-    result = "Please check the accuracy of the information you entered. Try again."
   }
 }
 
@@ -86,9 +87,159 @@ function displayResults()
   var currentDisplay = document.getElementsByClassName('needs-validation');
   var newDisplay = currentDisplay[0].style.display = 'none';
 
-  //test
-  var btn = document.createElement("BUTTON");   // Create a <button> element
-  btn.innerHTML = "CLICK ME";                   // Insert text
-  document.body.appendChild(btn);               // Append <button> to <body>
+  if(result == 'Obese')
+  {
+    //first paragraph
+    var para1 = document.createElement("p");
+    var node1 = document.createTextNode("For the information you entered: ");
+    para1.appendChild(node1);
+
+    var element1 = document.getElementById("mainPage");
+    element1.appendChild(para1);
+
+    //second paragraph
+    var para2 = document.createElement("p");
+    var node2 = document.createTextNode("Your BMI is " + bmi 
+      + ", indicating your weight is in the " + result + 
+      " category for people of your height.");
+    para2.appendChild(node2);
+
+    var element2 = document.getElementById("mainPage");
+    element2.appendChild(para2);
+
+    //third paragraph
+    var para3 = document.createElement("p");
+    var node3 = document.createTextNode("For your height, a normal weight range would be from 101 to 136 pounds");
+    para3.appendChild(node3);
+
+    var element3 = document.getElementById("mainPage");
+    element3.appendChild(para3);
+
+    //fourth paragraph
+    var para4 = document.createElement("p");
+    var node4 = document.createTextNode("People who are overweight or obese are " + 
+      "at a higher risk for chronic conditions such as high blood pressure, diabetes, " +
+      "and high cholesterol.");
+    para4.appendChild(node4);
+
+    var element4 = document.getElementById("mainPage");
+    element4.appendChild(para4);
+  }
+  else if(result == 'Overweight')
+  {
+    //first paragraph
+    var para1 = document.createElement("p");
+    var node1 = document.createTextNode("For the information you entered: ");
+    para1.appendChild(node1);
+
+    var element1 = document.getElementById("mainPage");
+    element1.appendChild(para1);
+
+    //second paragraph
+    var para2 = document.createElement("p");
+    var node2 = document.createTextNode("Your BMI is " + bmi 
+      + ", indicating your weight is in the " + result + 
+      " category for people of your height.");
+    para2.appendChild(node2);
+
+    var element2 = document.getElementById("mainPage");
+    element2.appendChild(para2);
+
+    //third paragraph
+    var para3 = document.createElement("p");
+    var node3 = document.createTextNode("For your height, a normal weight range would be from 101 to 136 pounds");
+    para3.appendChild(node3);
+
+    var element3 = document.getElementById("mainPage");
+    element3.appendChild(para3);
+
+    //fourth paragraph
+    var para4 = document.createElement("p");
+    var node4 = document.createTextNode("People who are overweight or obese are " + 
+      "at a higher risk for chronic conditions such as high blood pressure, diabetes, " +
+      "and high cholesterol.");
+    para4.appendChild(node4);
+
+    var element4 = document.getElementById("mainPage");
+    element4.appendChild(para4);
+  }
+  else if(result == 'Normal')
+  {
+    //first paragraph
+    var para1 = document.createElement("p");
+    var node1 = document.createTextNode("For the information you entered: ");
+    para1.appendChild(node1);
+
+    var element1 = document.getElementById("mainPage");
+    element1.appendChild(para1);
+
+    //second paragraph
+    var para2 = document.createElement("p");
+    var node2 = document.createTextNode("Your BMI is " + bmi 
+      + ", indicating your weight is in the " + result + 
+      " category for people of your height.");
+    para2.appendChild(node2);
+
+    var element2 = document.getElementById("mainPage");
+    element2.appendChild(para2);
+
+    //third paragraph
+    var para3 = document.createElement("p");
+    var node3 = document.createTextNode("For your height, a normal weight range would be from 101 to 136 pounds");
+    para3.appendChild(node3);
+
+    var element3 = document.getElementById("mainPage");
+    element3.appendChild(para3);
+
+    //fourth paragraph
+    var para4 = document.createElement("p");
+    var node4 = document.createTextNode("Maintaining a healthy weight may reduce the " + 
+      "the risk of chronic diseases associated with overweight and obesity.");
+    para4.appendChild(node4);
+
+    var element4 = document.getElementById("mainPage");
+    element4.appendChild(para4);
+  }
+  else if(result == 'Underweight')
+  {
+   //first paragraph
+    var para1 = document.createElement("p");
+    var node1 = document.createTextNode("For the information you entered: ");
+    para1.appendChild(node1);
+
+    var element1 = document.getElementById("mainPage");
+    element1.appendChild(para1);
+
+    //second paragraph
+    var para2 = document.createElement("p");
+    var node2 = document.createTextNode("Your BMI is " + bmi 
+      + ", indicating your weight is in the " + result + 
+      " category for people of your height.");
+    para2.appendChild(node2);
+
+    var element2 = document.getElementById("mainPage");
+    element2.appendChild(para2);
+
+    //third paragraph
+    var para3 = document.createElement("p");
+    var node3 = document.createTextNode("For your height, a normal weight range would be from 101 to 136 pounds");
+    para3.appendChild(node3);
+
+    var element3 = document.getElementById("mainPage");
+    element3.appendChild(para3);
+
+    //fourth paragraph
+    var para4 = document.createElement("p");
+    var node4 = document.createTextNode("Talk with your healthcare provider to " + 
+      "determine possible causes of Underweight and if you need to gain weight.");
+    para4.appendChild(node4);
+
+    var element4 = document.getElementById("mainPage");
+    element4.appendChild(para4); 
+  }
+
+
+
+
 }
 

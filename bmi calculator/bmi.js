@@ -80,15 +80,33 @@ function calculateBmi()
 
 function displayResults()
 {
+  //console test
   console.log("displayResults");
+
+  //retrieves the value of id called pounds and stores it in variable 'pounds'
+  var lbs = document.getElementById('pounds').value;
+
+  //retrieves the value of id called inches and stores it in variable 'inches'
+  var inch = document.getElementById('inches').value;
+
+  //retrieves the value of id called feet and stores it in variable 'feet'
+  var ft = document.getElementById('feet').value;
 
   /*getsElementsByClassName returns an element collection, here we need to get the first
     element of the collection in order to be able to read & set property 'display' */
   var currentDisplay = document.getElementsByClassName('needs-validation');
   var newDisplay = currentDisplay[0].style.display = 'none';
 
+  var currentDisplay = document.getElementById('myTable');
+  var newTableDisplay = currentDisplay.style.display = 'block';
+
+  //compares the value of result
   if(result == 'Obese')
   {
+    //highlights row on table
+    var tablerow = document.getElementById('row4');
+    tablerow.style.background = '#A52A2A';
+
     //first paragraph
     var para1 = document.createElement("p");
     var node1 = document.createTextNode("For the information you entered: ");
@@ -96,6 +114,22 @@ function displayResults()
 
     var element1 = document.getElementById("mainPage");
     element1.appendChild(para1);
+
+    //displays feet and inches
+    var info = document.createElement("p");
+    var info2 = document.createTextNode("Height: " + ft + " feet, " + inch + " inches");
+    info.appendChild(info2);
+
+    var elemen = document.getElementById("mainPage");
+    elemen.appendChild(info);
+
+    //displays weight
+    var infoo = document.createElement("p");
+    var info22 = document.createTextNode("Weight: " + lbs + " pounds");
+    infoo.appendChild(info22);
+
+    var elemenn = document.getElementById("mainPage");
+    elemenn.appendChild(infoo);
 
     //second paragraph
     var para2 = document.createElement("p");
@@ -127,6 +161,10 @@ function displayResults()
   }
   else if(result == 'Overweight')
   {
+    //highlights row on table
+    var tablerow = document.getElementById('row3');
+    tablerow.style.background = 'pink';
+
     //first paragraph
     var para1 = document.createElement("p");
     var node1 = document.createTextNode("For the information you entered: ");
@@ -134,6 +172,22 @@ function displayResults()
 
     var element1 = document.getElementById("mainPage");
     element1.appendChild(para1);
+
+    //displays feet and inches
+    var info = document.createElement("p");
+    var info2 = document.createTextNode("Height: " + ft + " feet, " + inch + " inches");
+    info.appendChild(info2);
+
+    var elemen = document.getElementById("mainPage");
+    elemen.appendChild(info);
+
+    //displays weight
+    var infoo = document.createElement("p");
+    var info22 = document.createTextNode("Weight: " + lbs + " pounds");
+    infoo.appendChild(info22);
+
+    var elemenn = document.getElementById("mainPage");
+    elemenn.appendChild(infoo);
 
     //second paragraph
     var para2 = document.createElement("p");
@@ -165,6 +219,10 @@ function displayResults()
   }
   else if(result == 'Normal')
   {
+    //highlights row on table
+    var tablerow = document.getElementById('row2');
+    tablerow.style.background = 'green';
+
     //first paragraph
     var para1 = document.createElement("p");
     var node1 = document.createTextNode("For the information you entered: ");
@@ -172,6 +230,22 @@ function displayResults()
 
     var element1 = document.getElementById("mainPage");
     element1.appendChild(para1);
+
+    //displays feet and inches
+    var info = document.createElement("p");
+    var info2 = document.createTextNode("Height: " + ft + " feet, " + inch + " inches");
+    info.appendChild(info2);
+
+    var elemen = document.getElementById("mainPage");
+    elemen.appendChild(info);
+
+    //displays weight
+    var infoo = document.createElement("p");
+    var info22 = document.createTextNode("Weight: " + lbs + " pounds");
+    infoo.appendChild(info22);
+
+    var elemenn = document.getElementById("mainPage");
+    elemenn.appendChild(infoo);
 
     //second paragraph
     var para2 = document.createElement("p");
@@ -202,6 +276,10 @@ function displayResults()
   }
   else if(result == 'Underweight')
   {
+    //highlights row on table
+    var tablerow = document.getElementById('row1');
+    tablerow.style.background = '#6666FF';
+
    //first paragraph
     var para1 = document.createElement("p");
     var node1 = document.createTextNode("For the information you entered: ");
@@ -209,6 +287,22 @@ function displayResults()
 
     var element1 = document.getElementById("mainPage");
     element1.appendChild(para1);
+
+    //displays feet and inches
+    var info = document.createElement("p");
+    var info2 = document.createTextNode("Height: " + ft + " feet, " + inch + " inches");
+    info.appendChild(info2);
+
+    var elemen = document.getElementById("mainPage");
+    elemen.appendChild(info);
+
+    //displays weight
+    var infoo = document.createElement("p");
+    var info22 = document.createTextNode("Weight: " + lbs + " pounds");
+    infoo.appendChild(info22);
+
+    var elemenn = document.getElementById("mainPage");
+    elemenn.appendChild(infoo);
 
     //second paragraph
     var para2 = document.createElement("p");
@@ -237,9 +331,6 @@ function displayResults()
     var element4 = document.getElementById("mainPage");
     element4.appendChild(para4); 
   }
-
-
-
-
 }
+
 

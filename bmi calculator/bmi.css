@@ -1,4 +1,13 @@
-/* empty for now */
 .needs-validation{
-	background-color: pink;
+	background-color: gray;
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+th, td{
+	border-collapse: collapse;
+	border: 1px solid black;
+	text-align: center;
+	height: 80px;
+	width: 130px;
 }

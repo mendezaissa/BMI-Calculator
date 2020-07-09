@@ -1,4 +1,3 @@
-
 (function() {
   'use strict';
   window.addEventListener('load', function() {
@@ -100,6 +99,9 @@ function displayResults()
   var currentDisplay = document.getElementById('myTable');
   var newTableDisplay = currentDisplay.style.display = 'block';
 
+  var currentPDisplay = document.getElementById('paragraphDiv');
+  var newPDisplay = currentPDisplay.style.display = 'block';
+
   //compares the value of result
   if(result == 'Obese')
   {
@@ -112,7 +114,7 @@ function displayResults()
     var node1 = document.createTextNode("For the information you entered: ");
     para1.appendChild(node1);
 
-    var element1 = document.getElementById("mainPage");
+    var element1 = document.getElementById("paragraphDiv");
     element1.appendChild(para1);
 
     //displays feet and inches
@@ -120,7 +122,7 @@ function displayResults()
     var info2 = document.createTextNode("Height: " + ft + " feet, " + inch + " inches");
     info.appendChild(info2);
 
-    var elemen = document.getElementById("mainPage");
+    var elemen = document.getElementById("paragraphDiv");
     elemen.appendChild(info);
 
     //displays weight
@@ -128,7 +130,7 @@ function displayResults()
     var info22 = document.createTextNode("Weight: " + lbs + " pounds");
     infoo.appendChild(info22);
 
-    var elemenn = document.getElementById("mainPage");
+    var elemenn = document.getElementById("paragraphDiv");
     elemenn.appendChild(infoo);
 
     //second paragraph
@@ -138,7 +140,7 @@ function displayResults()
       " category for people of your height.");
     para2.appendChild(node2);
 
-    var element2 = document.getElementById("mainPage");
+    var element2 = document.getElementById("paragraphDiv");
     element2.appendChild(para2);
 
     //third paragraph
@@ -146,7 +148,7 @@ function displayResults()
     var node3 = document.createTextNode("For your height, a normal weight range would be from 101 to 136 pounds");
     para3.appendChild(node3);
 
-    var element3 = document.getElementById("mainPage");
+    var element3 = document.getElementById("paragraphDiv");
     element3.appendChild(para3);
 
     //fourth paragraph
@@ -156,7 +158,7 @@ function displayResults()
       "and high cholesterol.");
     para4.appendChild(node4);
 
-    var element4 = document.getElementById("mainPage");
+    var element4 = document.getElementById("paragraphDiv");
     element4.appendChild(para4);
   }
   else if(result == 'Overweight')
@@ -170,7 +172,7 @@ function displayResults()
     var node1 = document.createTextNode("For the information you entered: ");
     para1.appendChild(node1);
 
-    var element1 = document.getElementById("mainPage");
+    var element1 = document.getElementById("paragraphDiv");
     element1.appendChild(para1);
 
     //displays feet and inches
@@ -178,7 +180,7 @@ function displayResults()
     var info2 = document.createTextNode("Height: " + ft + " feet, " + inch + " inches");
     info.appendChild(info2);
 
-    var elemen = document.getElementById("mainPage");
+    var elemen = document.getElementById("paragraphDiv");
     elemen.appendChild(info);
 
     //displays weight
@@ -186,7 +188,7 @@ function displayResults()
     var info22 = document.createTextNode("Weight: " + lbs + " pounds");
     infoo.appendChild(info22);
 
-    var elemenn = document.getElementById("mainPage");
+    var elemenn = document.getElementById("paragraphDiv");
     elemenn.appendChild(infoo);
 
     //second paragraph
@@ -196,7 +198,7 @@ function displayResults()
       " category for people of your height.");
     para2.appendChild(node2);
 
-    var element2 = document.getElementById("mainPage");
+    var element2 = document.getElementById("paragraphDiv");
     element2.appendChild(para2);
 
     //third paragraph
@@ -204,7 +206,7 @@ function displayResults()
     var node3 = document.createTextNode("For your height, a normal weight range would be from 101 to 136 pounds");
     para3.appendChild(node3);
 
-    var element3 = document.getElementById("mainPage");
+    var element3 = document.getElementById("paragraphDiv");
     element3.appendChild(para3);
 
     //fourth paragraph
@@ -214,7 +216,7 @@ function displayResults()
       "and high cholesterol.");
     para4.appendChild(node4);
 
-    var element4 = document.getElementById("mainPage");
+    var element4 = document.getElementById("paragraphDiv");
     element4.appendChild(para4);
   }
   else if(result == 'Normal')
@@ -228,7 +230,7 @@ function displayResults()
     var node1 = document.createTextNode("For the information you entered: ");
     para1.appendChild(node1);
 
-    var element1 = document.getElementById("mainPage");
+    var element1 = document.getElementById("paragraphDiv");
     element1.appendChild(para1);
 
     //displays feet and inches
@@ -236,7 +238,7 @@ function displayResults()
     var info2 = document.createTextNode("Height: " + ft + " feet, " + inch + " inches");
     info.appendChild(info2);
 
-    var elemen = document.getElementById("mainPage");
+    var elemen = document.getElementById("paragraphDiv");
     elemen.appendChild(info);
 
     //displays weight
@@ -244,7 +246,7 @@ function displayResults()
     var info22 = document.createTextNode("Weight: " + lbs + " pounds");
     infoo.appendChild(info22);
 
-    var elemenn = document.getElementById("mainPage");
+    var elemenn = document.getElementById("paragraphDiv");
     elemenn.appendChild(infoo);
 
     //second paragraph
@@ -254,7 +256,7 @@ function displayResults()
       " category for people of your height.");
     para2.appendChild(node2);
 
-    var element2 = document.getElementById("mainPage");
+    var element2 = document.getElementById("paragraphDiv");
     element2.appendChild(para2);
 
     //third paragraph
@@ -262,7 +264,7 @@ function displayResults()
     var node3 = document.createTextNode("For your height, a normal weight range would be from 101 to 136 pounds");
     para3.appendChild(node3);
 
-    var element3 = document.getElementById("mainPage");
+    var element3 = document.getElementById("paragraphDiv");
     element3.appendChild(para3);
 
     //fourth paragraph
@@ -271,7 +273,7 @@ function displayResults()
       "the risk of chronic diseases associated with overweight and obesity.");
     para4.appendChild(node4);
 
-    var element4 = document.getElementById("mainPage");
+    var element4 = document.getElementById("paragraphDiv");
     element4.appendChild(para4);
   }
   else if(result == 'Underweight')
@@ -285,7 +287,7 @@ function displayResults()
     var node1 = document.createTextNode("For the information you entered: ");
     para1.appendChild(node1);
 
-    var element1 = document.getElementById("mainPage");
+    var element1 = document.getElementById("paragraphDiv");
     element1.appendChild(para1);
 
     //displays feet and inches
@@ -293,7 +295,7 @@ function displayResults()
     var info2 = document.createTextNode("Height: " + ft + " feet, " + inch + " inches");
     info.appendChild(info2);
 
-    var elemen = document.getElementById("mainPage");
+    var elemen = document.getElementById("paragraphDiv");
     elemen.appendChild(info);
 
     //displays weight
@@ -301,7 +303,7 @@ function displayResults()
     var info22 = document.createTextNode("Weight: " + lbs + " pounds");
     infoo.appendChild(info22);
 
-    var elemenn = document.getElementById("mainPage");
+    var elemenn = document.getElementById("paragraphDiv");
     elemenn.appendChild(infoo);
 
     //second paragraph
@@ -311,7 +313,7 @@ function displayResults()
       " category for people of your height.");
     para2.appendChild(node2);
 
-    var element2 = document.getElementById("mainPage");
+    var element2 = document.getElementById("paragraphDiv");
     element2.appendChild(para2);
 
     //third paragraph
@@ -319,7 +321,7 @@ function displayResults()
     var node3 = document.createTextNode("For your height, a normal weight range would be from 101 to 136 pounds");
     para3.appendChild(node3);
 
-    var element3 = document.getElementById("mainPage");
+    var element3 = document.getElementById("paragraphDiv");
     element3.appendChild(para3);
 
     //fourth paragraph
@@ -328,9 +330,7 @@ function displayResults()
       "determine possible causes of Underweight and if you need to gain weight.");
     para4.appendChild(node4);
 
-    var element4 = document.getElementById("mainPage");
+    var element4 = document.getElementById("paragraphDiv");
     element4.appendChild(para4); 
   }
 }
-
-

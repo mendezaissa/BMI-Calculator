@@ -1,13 +1,61 @@
-.needs-validation{
-	background-color: gray;
-	padding-top: 20px;
-	padding-bottom: 20px;
+body{
+	background-color: rgb(210,210,224);
 }
 
-th, td{
+.needs-validation {
+	background-color: rgb(210, 210, 224);
+	display: block;
+	margin: auto;
+	padding-top: 20px;
+	padding-bottom: 200px;
+	
+}
+
+.col-md-3.mb-3 {
+	
+	display: inline-block;
+	margin: auto;
+	width: 200%;
+	
+}
+
+.btn.btn-dark {
+	position: relative;
+	display: block;
+	margin: auto;
+	padding-top: 7px;
+	
+}
+
+
+@media only screen and (max-width: 768px) {
+	.col-md-3.mb-3 {
+		display: block;
+		margin: auto;
+		width: 50%;
+	}
+}
+
+th, td {
 	border-collapse: collapse;
 	border: 1px solid black;
 	text-align: center;
 	height: 80px;
 	width: 130px;
+}
+
+#resultsPage {
+	float: left;
+	padding-left: 35px;
+	padding-top: 30px;
+
+}
+
+
+#paragraphDiv {
+	float: left;
+	position: absolute;
+	left: 310px;
+	padding-top: 30px;
+	padding-right: 10px;
 }
